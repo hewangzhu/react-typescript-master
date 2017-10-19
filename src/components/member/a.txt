@@ -1,0 +1,44 @@
+BoilerPlate react+redux+react+react-router+ts start-kit
+vue-cli 生成 
+webpack  awsome-typescript-loader  htmlWebpackPluign  dev-server: port vendor 打包分开
+rules  test   .tsx .ts  .css  .styl .vue ...  交给loader  生成 js => htmlWebpackPluign index.html 后面插入 .js
+预处理 匹配 loader plugin  html+optimize.CommonsChunkPlugin
+.product .dev .base 三个文件
+
+Hello React 
+ReactDOM.render(rootComponent, rootElement);
+JSX <div>Hello</div> typescript
+React.StatelessComponent<{Props}> = () => {
+    return (
+    )
+}
+三 组件化
+Page Component JSX 分到不同的组件去， 拼起来
+切页面， 很长， 多个页面， -> react-router
+
+四 react-router
+spa router navigation
+react-router 成为应用的入口 StatelessComponent
+Router Route IndexRoute hashHistory
+<Router>
+    <Route path="" component="">
+        <Route path="" component=""></Route>
+    </Route>
+</Router>
+
+五 数据流
+MemberEntity[] 
+MemberEntity
+model/member.ts interface
+/api/member
+
+六 状态组件
+组件变复杂 props state 两条线走
+State interface member
+生命周期请求 state => members PageContainer
+props传递 一直往下传递
+<MemberFrom member =>
+Props interface
+=> Input onchange
+往回传
+onFieldChange => 改变State MVVM

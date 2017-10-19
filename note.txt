@@ -1,0 +1,11 @@
+安装：
+yarn add bootstrap
+yarn add --dev awesome-typescript-loader
+--dev 开发阶段的依赖
+yarn yarn add --dev webpack web-dev-server babel-core babel-preset-env css-loader file-loader url-loader typescript
+devtool: 'inline-source-map', // 拿编译前的代码出来调试
+yarn add --dev html-webpack-plugin
+yarn add --dev style-loader
+yarn add toastr
+yarn add --dev @types/toastr
+yarn add lc-form-validation
